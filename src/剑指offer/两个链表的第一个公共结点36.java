@@ -8,7 +8,7 @@ package 剑指offer;
  * -------------------------------------------- 
  * @author ilovejava1314
  */
-public class 两个链表的第一个公共结点35 {
+public class 两个链表的第一个公共结点36 {
 
 	/*
 	 * 思路:
