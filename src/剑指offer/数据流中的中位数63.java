@@ -14,10 +14,11 @@ import java.util.PriorityQueue;
 public class 数据流中的中位数63 {
 	/*
 	 * 思路:
-	 * 	
+	 * 	利用大小堆来处理数据，大数存入大根堆，小数存入小根堆
+	 * ，具体思路于代码注释
 	 * -------------------------------------------
-	 * 运行时间：23ms
-	 * 占用内存：9696k
+	 * 运行时间：46ms
+	 * 占用内存：9664k
 	 */
 	private int count = 0;
 	private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
