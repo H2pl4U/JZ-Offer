@@ -2,7 +2,7 @@ package ¶şË¢;
 
 public class ±äÌ¬ÌøÌ¨½×09 {
 
-	// ac
+	// ac 
 	public static int BTJumpFloor(int target) {
 		return (int) Math.pow((double) 2, (double) (target - 1));
 	}
