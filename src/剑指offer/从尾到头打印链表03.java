@@ -18,9 +18,6 @@ class ListNode {
 
 public class 从尾到头打印链表03 {
 
-	public static void main(String[] args) {
-		
-	}
 	/*
 	  * 思路一
 	  * 创建两个ArrayList，一个用来接收链表元素
