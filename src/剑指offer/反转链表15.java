@@ -35,7 +35,6 @@ public class ·´×ªÁ´±í15 {
 			head = next;
 		}
 		return pre;
-		
     }
 	
 	/*
