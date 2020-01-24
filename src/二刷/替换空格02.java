@@ -4,7 +4,17 @@ public class Ìæ»»¿Õ¸ñ02 {
 	
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("we are family");
-		System.out.println(replaceSpace(sb));
+		System.out.println(replaceSpace2(sb));
+	}
+	
+	
+	public static String replaceSpace2(StringBuffer str) {
+		StringBuffer sb = new StringBuffer();
+		for (int i = 0;i<str.length();i++) {
+			if(str.charAt(i) == ' ') sb.append("%20");
+			else sb.append(str.charAt(i));
+		}
+		return sb.toString();
 	}
 	
 	/*

@@ -29,5 +29,18 @@ public class 从尾到头打印链表03 {
 		}
 		return list;
 	}
+	
+	public ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		Stack<Integer> stack = new Stack<Integer>();
+		while (listNode != null) {
+			stack.add(listNode.val);
+			listNode = listNode.next;
+		}
+		while (!stack.isEmpty()) {
+			list.add(stack.pop());
+		}
+		return list;
+	}
 
 }
