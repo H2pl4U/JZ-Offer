@@ -18,7 +18,7 @@ public class ¾ØÕóÖĞµÄÂ·¾¶67 {
 		boolean[][] visited = new boolean[board.length][board[0].length];
 		for (int i = 0;i < visited.length;i++) {
 			for (int j = 0;j < visited[0].length;j++) {
-				if(dfs(board,i,j,w,0,visited))
+				if(dfs(board,i,j,w,0,visited)) 
 					return true;
 			}
 		}
