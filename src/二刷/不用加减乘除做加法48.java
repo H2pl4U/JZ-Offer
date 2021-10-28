@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class ²»ÓÃ¼Ó¼õ³Ë³ı×ö¼Ó·¨48 {
+public class ä¸ç”¨åŠ å‡ä¹˜é™¤åšåŠ æ³•48 {
 
 	//ac
 	public static int Add(int num1,int num2) {

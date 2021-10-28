@@ -1,14 +1,14 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * 2.ÇëÊµÏÖÒ»¸öº¯Êı£¬½«Ò»¸ö×Ö·û´®ÖĞµÄÃ¿¸ö¿Õ¸ñÌæ»»³É¡°%20¡±¡£
- * ÀıÈç£¬µ±×Ö·û´®ÎªWe Are Happy.Ôò¾­¹ıÌæ»»Ö®ºóµÄ×Ö·û´®ÎªWe%20Are%20Happy¡£
+ * 2.è¯·å®ç°ä¸€ä¸ªå‡½æ•°ï¼Œå°†ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­çš„æ¯ä¸ªç©ºæ ¼æ›¿æ¢æˆâ€œ%20â€ã€‚
+ * ä¾‹å¦‚ï¼Œå½“å­—ç¬¦ä¸²ä¸ºWe Are Happy.åˆ™ç»è¿‡æ›¿æ¢ä¹‹åçš„å­—ç¬¦ä¸²ä¸ºWe%20Are%20Happyã€‚
  * 
  * @author ilovejava1314
  *
  */
 
-public class ¿Õ¸ñÌæ»»02 {
+public class ç©ºæ ¼æ›¿æ¢02 {
 
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("we are family");
@@ -18,8 +18,8 @@ public class ¿Õ¸ñÌæ»»02 {
 	
 	
 	/*
-	 * ·½·¨Ò»:
-	 * Ê¹ÓÃStringBufferµÄreplace·½±ãµÄ½â¾öÎÊÌâ£¬²éÕÒ¿Õ¸ñ²¢Ìæ»»¼´¿É
+	 * æ–¹æ³•ä¸€:
+	 * ä½¿ç”¨StringBufferçš„replaceæ–¹ä¾¿çš„è§£å†³é—®é¢˜ï¼ŒæŸ¥æ‰¾ç©ºæ ¼å¹¶æ›¿æ¢å³å¯
 	 */
 	static String replaceSpace(StringBuffer str) {
 		for (int i = 0; i < str.length(); i++) {
@@ -31,9 +31,9 @@ public class ¿Õ¸ñÌæ»»02 {
     }
 	
 	/*
-	 * ·½·¨¶ş:
-	 * ´´½¨Ò»¸öĞÂµÄ×Ö·û´®£¬Ñ­»·×Ö·û´®£¬
-	 * ÈôÎª¿Õ¸ñÔòÔÚĞÂ×Ö·û´®ÖĞappend(Ìí¼Ó)"%20",·ñÔòÌí¼ÓÔ­×Ö·û
+	 * æ–¹æ³•äºŒ:
+	 * åˆ›å»ºä¸€ä¸ªæ–°çš„å­—ç¬¦ä¸²ï¼Œå¾ªç¯å­—ç¬¦ä¸²ï¼Œ
+	 * è‹¥ä¸ºç©ºæ ¼åˆ™åœ¨æ–°å­—ç¬¦ä¸²ä¸­append(æ·»åŠ )"%20",å¦åˆ™æ·»åŠ åŸå­—ç¬¦
 	 */
 	static String replaceSpace2(StringBuffer str) {
 		StringBuffer sb = new StringBuffer();

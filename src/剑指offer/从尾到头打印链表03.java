@@ -1,11 +1,11 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 import java.util.Stack;
 
 
 /*
- * ÊäÈëÒ»¸öÁ´±í£¬°´Á´±íÖµ´ÓÎ²µ½Í·µÄË³Ğò·µ»ØÒ»¸öArrayList¡£
+ * è¾“å…¥ä¸€ä¸ªé“¾è¡¨ï¼ŒæŒ‰é“¾è¡¨å€¼ä»å°¾åˆ°å¤´çš„é¡ºåºè¿”å›ä¸€ä¸ªArrayListã€‚
  * @author ilovejava1314
  */
 class ListNode {
@@ -16,15 +16,15 @@ class ListNode {
     }
 }
 
-public class ´ÓÎ²µ½Í·´òÓ¡Á´±í03 {
+public class ä»å°¾åˆ°å¤´æ‰“å°é“¾è¡¨03 {
 
 	/*
-	  * Ë¼Â·Ò»
-	  * ´´½¨Á½¸öArrayList£¬Ò»¸öÓÃÀ´½ÓÊÕÁ´±íÔªËØ
-	  * ÁíÒ»¸öÀ´½ÓÊÕÁ´±íÄæĞòºóµÄÔªËØ,ĞÔÄÜÒ»°ã
+	  * æ€è·¯ä¸€
+	  * åˆ›å»ºä¸¤ä¸ªArrayListï¼Œä¸€ä¸ªç”¨æ¥æ¥æ”¶é“¾è¡¨å…ƒç´ 
+	  * å¦ä¸€ä¸ªæ¥æ¥æ”¶é“¾è¡¨é€†åºåçš„å…ƒç´ ,æ€§èƒ½ä¸€èˆ¬
 	 *----------------------
-	  * ÔËĞĞÊ±¼ä£º24ms
-	  * Õ¼ÓÃÄÚ´æ£º9116k
+	  * è¿è¡Œæ—¶é—´ï¼š24ms
+	  * å ç”¨å†…å­˜ï¼š9116k
 	 */
 	public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -43,11 +43,11 @@ public class ´ÓÎ²µ½Í·´òÓ¡Á´±í03 {
 	}
 	
 	/*
-	  * ÀûÓÃÕ»µÄÏÈ½øºó³öĞÔÖÊ£¬½«Á´±íÔªËØÒÀ´Ë´æÈëÕ»ÖĞ
-	  * ÔÙÓÃArrayList½ÓÊÕ³öÕ»ÔªËØ,ĞÔÄÜÒ»°ã
+	  * åˆ©ç”¨æ ˆçš„å…ˆè¿›åå‡ºæ€§è´¨ï¼Œå°†é“¾è¡¨å…ƒç´ ä¾æ­¤å­˜å…¥æ ˆä¸­
+	  * å†ç”¨ArrayListæ¥æ”¶å‡ºæ ˆå…ƒç´ ,æ€§èƒ½ä¸€èˆ¬
 	 * -------------------------
-	  * ÔËĞĞÊ±¼ä£º29ms
-	  * Õ¼ÓÃÄÚ´æ£º9500k
+	  * è¿è¡Œæ—¶é—´ï¼š29ms
+	  * å ç”¨å†…å­˜ï¼š9500k
 	 */
 	public ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
 		Stack<Integer> stack = new Stack<Integer>();
@@ -63,11 +63,11 @@ public class ´ÓÎ²µ½Í·´òÓ¡Á´±í03 {
     }
 	
 	/*
-	  * ÀûÓÃµİ¹éÊµÏÖ£¬ĞÂÁ´±íÖ¸ÏòlistNodeÍ·²¿£¬
+	  * åˆ©ç”¨é€’å½’å®ç°ï¼Œæ–°é“¾è¡¨æŒ‡å‘listNodeå¤´éƒ¨ï¼Œ
 	  * 
 	 * -------------------------
-	  * ÔËĞĞÊ±¼ä£º24ms
-	  * Õ¼ÓÃÄÚ´æ£º9440k
+	  * è¿è¡Œæ—¶é—´ï¼š24ms
+	  * å ç”¨å†…å­˜ï¼š9440k
 	 */
 	public ArrayList<Integer> printListFromTailToHead3(ListNode listNode) {
 		ArrayList<Integer> list = new ArrayList<Integer>();

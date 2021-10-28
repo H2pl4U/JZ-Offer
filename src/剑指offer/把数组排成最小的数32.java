@@ -1,14 +1,14 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.Arrays;
 
 /**
- * ÊäÈëÒ»¸öÕýÕûÊýÊý×é£¬°ÑÊý×éÀïËùÓÐÊý×ÖÆ´½ÓÆðÀ´ÅÅ³ÉÒ»¸öÊý£¬´òÓ¡
- * ÄÜÆ´½Ó³öµÄËùÓÐÊý×ÖÖÐ×îÐ¡µÄÒ»¸ö¡£ÀýÈçÊäÈëÊý×é{3£¬32£¬321}£¬Ôò
- * ´òÓ¡³öÕâÈý¸öÊý×ÖÄÜÅÅ³ÉµÄ×îÐ¡Êý×ÖÎª321323¡£
+ * è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°æ•°ç»„ï¼ŒæŠŠæ•°ç»„é‡Œæ‰€æœ‰æ•°å­—æ‹¼æŽ¥èµ·æ¥æŽ’æˆä¸€ä¸ªæ•°ï¼Œæ‰“å°
+ * èƒ½æ‹¼æŽ¥å‡ºçš„æ‰€æœ‰æ•°å­—ä¸­æœ€å°çš„ä¸€ä¸ªã€‚ä¾‹å¦‚è¾“å…¥æ•°ç»„{3ï¼Œ32ï¼Œ321}ï¼Œåˆ™
+ * æ‰“å°å‡ºè¿™ä¸‰ä¸ªæ•°å­—èƒ½æŽ’æˆçš„æœ€å°æ•°å­—ä¸º321323ã€‚
  * @author ilovejava1314
  */
-public class °ÑÊý×éÅÅ³É×îÐ¡µÄÊý32 {
+public class æŠŠæ•°ç»„æŽ’æˆæœ€å°çš„æ•°32 {
 
 	public static void main(String[] args) {
 		int[] arr = {3,32,321};
@@ -17,15 +17,15 @@ public class °ÑÊý×éÅÅ³É×îÐ¡µÄÊý32 {
 	
 	
 	 /*
-	  * Ë¼Â·:
-	  * ¿ÉÒÔ¿´³ÉÊÇÒ»¸öÅÅÐòÎÊÌâ£¬ÔÚ±È½ÏÁ½¸ö×Ö·û´® S1 ºÍ S2 µÄ´óÐ¡Ê±£¬
-	  * Ó¦¸Ã±È½ÏµÄÊÇ S1+S2 ºÍ S2+S1 µÄ´óÐ¡£¬Èç¹û S1+S2 < S2+S1£¬
-	  * ÄÇÃ´Ó¦¸Ã°Ñ S1 ÅÅÔÚÇ°Ãæ£¬·ñÔòÓ¦¸Ã°Ñ S2 ÅÅÔÚÇ°Ãæ¡£
+	  * æ€è·¯:
+	  * å¯ä»¥çœ‹æˆæ˜¯ä¸€ä¸ªæŽ’åºé—®é¢˜ï¼Œåœ¨æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸² S1 å’Œ S2 çš„å¤§å°æ—¶ï¼Œ
+	  * åº”è¯¥æ¯”è¾ƒçš„æ˜¯ S1+S2 å’Œ S2+S1 çš„å¤§å°ï¼Œå¦‚æžœ S1+S2 < S2+S1ï¼Œ
+	  * é‚£ä¹ˆåº”è¯¥æŠŠ S1 æŽ’åœ¨å‰é¢ï¼Œå¦åˆ™åº”è¯¥æŠŠ S2 æŽ’åœ¨å‰é¢ã€‚
 	  * 
-	  * Ë¼Â·Ô´ÓÚCyC´óÀÐ¡£
+	  * æ€è·¯æºäºŽCyCå¤§ä½¬ã€‚
 	  *----------------------
-	  * ÔËÐÐÊ±¼ä£º147ms
-	  * Õ¼ÓÃÄÚ´æ£º14960k
+	  * è¿è¡Œæ—¶é—´ï¼š147ms
+	  * å ç”¨å†…å­˜ï¼š14960k
 	 */
 	public static String PrintMinNumber(int [] numbers) {
 		if(numbers==null||numbers.length==0) 

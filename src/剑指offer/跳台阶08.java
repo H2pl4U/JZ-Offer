@@ -1,22 +1,22 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * Ò»Ö»ÇàÍÜÒ»´Î¿ÉÒÔÌøÉÏ1¼¶Ì¨½×£¬Ò²¿ÉÒÔÌøÉÏ2¼¶¡£
- * Çó¸ÃÇàÍÜÌøÉÏÒ»¸ön¼¶µÄÌ¨½××Ü¹²ÓÐ¶àÉÙÖÖÌø·¨
- * £¨ÏÈºó´ÎÐò²»Í¬Ëã²»Í¬µÄ½á¹û£©¡£
+ * ä¸€åªé’è›™ä¸€æ¬¡å¯ä»¥è·³ä¸Š1çº§å°é˜¶ï¼Œä¹Ÿå¯ä»¥è·³ä¸Š2çº§ã€‚
+ * æ±‚è¯¥é’è›™è·³ä¸Šä¸€ä¸ªnçº§çš„å°é˜¶æ€»å…±æœ‰å¤šå°‘ç§è·³æ³•
+ * ï¼ˆå…ˆåŽæ¬¡åºä¸åŒç®—ä¸åŒçš„ç»“æžœï¼‰ã€‚
  * @author ilovejava1314
  */
-public class ÌøÌ¨½×08 {
+public class è·³å°é˜¶08 {
 
 	public static void main(String[] args) {
 		System.out.println(JumpFloor(4));
 	}
 	
 	/*
-	 * µÝ¹éË¼Ïë
+	 * é€’å½’æ€æƒ³
 	 * ---------------------------------------
-	  * ÔËÐÐÊ±¼ä£º605ms
-	  * Õ¼ÓÃÄÚ´æ£º9200k
+	  * è¿è¡Œæ—¶é—´ï¼š605ms
+	  * å ç”¨å†…å­˜ï¼š9200k
 	 */
 	public static int JumpFloor(int target) {
 		if(target==1) return 1;
@@ -26,16 +26,16 @@ public class ÌøÌ¨½×08 {
     }
 	
 	/*
-	 * Ë¼Â·:
-	 * ÀàËÆÓÚì³²¨À­ÆõÊýÁÐ£¬Ê×ÏÈÃ÷°×Ò»¼¶Ì¨½×ÓÐ1ÖÖÌø·¨£¬¶þ¼¶Ì¨½×ÓÐ2ÖÖÌø·¨
-	 * Èý¼¶Ì¨½×¿ÉÒÔ´ÓÒ»¼¶Ì¨½×ÌøÉÏÀ´Ò²¿ÉÒÔ´Ó¶þ¼¶Ì¨½×ÌøÉÏÀ´£¬
-	 * ¼´µÈÓÚÒ»¼¶Ì¨½×Ìø·¨ÊýÁ¿¼ÓÉÏ¶þ¼¶Ì¨½×Ìø·¨ÊýÁ¿£¬ÒÀ´ËÀàÍÆ¿ÉµÃ³ö
-	 * n¼¶Ì¨½×¹²ÓÐn-2¼¶Ì¨½×Ìø·¨ÊýÓën-1¼¶Ì¨½×Ìø·¨ÊýÖ®ºÍ
+	 * æ€è·¯:
+	 * ç±»ä¼¼äºŽæ–æ³¢æ‹‰å¥‘æ•°åˆ—ï¼Œé¦–å…ˆæ˜Žç™½ä¸€çº§å°é˜¶æœ‰1ç§è·³æ³•ï¼ŒäºŒçº§å°é˜¶æœ‰2ç§è·³æ³•
+	 * ä¸‰çº§å°é˜¶å¯ä»¥ä»Žä¸€çº§å°é˜¶è·³ä¸Šæ¥ä¹Ÿå¯ä»¥ä»ŽäºŒçº§å°é˜¶è·³ä¸Šæ¥ï¼Œ
+	 * å³ç­‰äºŽä¸€çº§å°é˜¶è·³æ³•æ•°é‡åŠ ä¸ŠäºŒçº§å°é˜¶è·³æ³•æ•°é‡ï¼Œä¾æ­¤ç±»æŽ¨å¯å¾—å‡º
+	 * nçº§å°é˜¶å…±æœ‰n-2çº§å°é˜¶è·³æ³•æ•°ä¸Žn-1çº§å°é˜¶è·³æ³•æ•°ä¹‹å’Œ
 	 * 1 2 3 5 8 13 ...
-	 * Õâ²»ÕýÊÇì³²¨À­ÆõÊýÁÐÂð£¿
+	 * è¿™ä¸æ­£æ˜¯æ–æ³¢æ‹‰å¥‘æ•°åˆ—å—ï¼Ÿ
 	 * ---------------------------------------
-	  * ÔËÐÐÊ±¼ä£º20ms
-	  * Õ¼ÓÃÄÚ´æ£º9436k
+	  * è¿è¡Œæ—¶é—´ï¼š20ms
+	  * å ç”¨å†…å­˜ï¼š9436k
 	 */
 	public static int JumpFloor2(int target) {
 		if(target==1||target==2) return target;

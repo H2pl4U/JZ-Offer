@@ -1,4 +1,4 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -12,10 +12,10 @@ class ListNode {
 	}
 }
 
-public class ´ÓÎ²µ½Í·´òÓ¡Á´±í03 {
+public class ä»å°¾åˆ°å¤´æ‰“å°é“¾è¡¨03 {
 
 	/*
-	 * ac 100% ÔËĞĞÊ±¼ä£º17ms Õ¼ÓÃÄÚ´æ£º9560k
+	 * ac 100% è¿è¡Œæ—¶é—´ï¼š17ms å ç”¨å†…å­˜ï¼š9560k
 	 */
 	public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 		ArrayList<Integer> list = new ArrayList<Integer>();

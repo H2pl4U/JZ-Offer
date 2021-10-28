@@ -1,12 +1,12 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
 import java.util.Stack;
 
-public class ÓÃÁ½¸öÕ»ÊµÏÖ¶ÓÁĞ05 {
+public class ç”¨ä¸¤ä¸ªæ ˆå®ç°é˜Ÿåˆ—05 {
 	
 	/**
-	 * ÔËĞĞÊ±¼ä£º12ms
-	 * Õ¼ÓÃÄÚ´æ£º9272k
+	 * è¿è¡Œæ—¶é—´ï¼š12ms
+	 * å ç”¨å†…å­˜ï¼š9272k
 	 */
 	Stack<Integer> stack1 = new Stack<Integer>(); 	
 	Stack<Integer> stack2 = new Stack<Integer>(); 	

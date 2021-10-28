@@ -1,11 +1,11 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * ÊäÈëÒ»¸öÕûÊýÊý×é£¬ÅÐ¶Ï¸ÃÊý×éÊÇ²»ÊÇÄ³¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúµÄ½á¹û¡£
- * Èç¹ûÊÇÔòÊä³öYes,·ñÔòÊä³öNo¡£¼ÙÉèÊäÈëµÄÊý×éµÄÈÎÒâÁ½¸öÊý×Ö¶¼»¥²»ÏàÍ¬¡£
+ * è¾“å…¥ä¸€ä¸ªæ•´æ•°æ•°ç»„ï¼Œåˆ¤æ–­è¯¥æ•°ç»„æ˜¯ä¸æ˜¯æŸäºŒå‰æœç´¢æ ‘çš„åŽåºéåŽ†çš„ç»“æžœã€‚
+ * å¦‚æžœæ˜¯åˆ™è¾“å‡ºYes,å¦åˆ™è¾“å‡ºNoã€‚å‡è®¾è¾“å…¥çš„æ•°ç»„çš„ä»»æ„ä¸¤ä¸ªæ•°å­—éƒ½äº’ä¸ç›¸åŒã€‚
  * @author ilovejava1314
  */
-public class ¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúÐòÁÐ23 {
+public class äºŒå‰æœç´¢æ ‘çš„åŽåºéåŽ†åºåˆ—23 {
 
 	public static void main(String[] args) {
 		int[] sequence = {4,5,2,7,3,1};
@@ -14,14 +14,14 @@ public class ¶þ²æËÑË÷Ê÷µÄºóÐò±éÀúÐòÁÐ23 {
 	
 	
 	/*
-	* Ë¼Â·:BSTµÄºóÐòÐòÁÐµÄºÏ·¨ÐòÁÐ£¬¶ÔÓÚÒ»¸öÐòÁÐS£¬
-	* ×îºóÒ»¸öÔªËØÊÇx £¨Ò²¾ÍÊÇ¸ù£©£¬Èç¹ûÈ¥µô×îºóÒ»¸öÔªËØ
-	* µÄÐòÁÐÎªT£¬ÄÇÃ´TÂú×ã£ºT¿ÉÒÔ·Ö³ÉÁ½¶Î£¬Ç°Ò»¶Î£¨×ó×ÓÊ÷£©
-	* Ð¡ÓÚx£¬ºóÒ»¶Î£¨ÓÒ×ÓÊ÷£©´óÓÚx£¬ÇÒÕâÁ½¶Î£¨×ÓÊ÷£©¶¼ÊÇºÏ
-	* ·¨µÄºóÐòÐòÁÐ¡£
+	* æ€è·¯:BSTçš„åŽåºåºåˆ—çš„åˆæ³•åºåˆ—ï¼Œå¯¹äºŽä¸€ä¸ªåºåˆ—Sï¼Œ
+	* æœ€åŽä¸€ä¸ªå…ƒç´ æ˜¯x ï¼ˆä¹Ÿå°±æ˜¯æ ¹ï¼‰ï¼Œå¦‚æžœåŽ»æŽ‰æœ€åŽä¸€ä¸ªå…ƒç´ 
+	* çš„åºåˆ—ä¸ºTï¼Œé‚£ä¹ˆTæ»¡è¶³ï¼šTå¯ä»¥åˆ†æˆä¸¤æ®µï¼Œå‰ä¸€æ®µï¼ˆå·¦å­æ ‘ï¼‰
+	* å°äºŽxï¼ŒåŽä¸€æ®µï¼ˆå³å­æ ‘ï¼‰å¤§äºŽxï¼Œä¸”è¿™ä¸¤æ®µï¼ˆå­æ ‘ï¼‰éƒ½æ˜¯åˆ
+	* æ³•çš„åŽåºåºåˆ—ã€‚
 	* -----------------------------------------------
-	* ÔËÐÐÊ±¼ä£º15ms
-	* Õ¼ÓÃÄÚ´æ£º9224k
+	* è¿è¡Œæ—¶é—´ï¼š15ms
+	* å ç”¨å†…å­˜ï¼š9224k
 	*/
 	public static boolean VerifySquenceOfBST(int [] sequence) {
 		if(sequence.length==0) return false;

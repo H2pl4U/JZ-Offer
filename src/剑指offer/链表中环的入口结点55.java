@@ -1,20 +1,20 @@
-package ��ָoffer;
+package 剑指offer;
 
 import java.util.ArrayList;
 
 /**
- * ��һ�������������а����������ҳ��������Ļ�����ڽ�㣬�������null��
+ * 给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。
  * @author ilovejava1314
  */
-public class �����л�����ڽ��55 {
+public class 链表中环的入口结点55 {
 	/*
-	 * ˼·:
-	 * 	����ArrayList�洢�����е�Ԫ�أ���ͷ��������
-	 * ���ArrayList���Ѱ����˵�ǰ����Ԫ�أ���ֱ�ӷ��ص�ǰ
-	 * Ԫ�أ�����Ԫ�ؼ�������ArrayList�С�
+	 * 思路:
+	 * 	利用ArrayList存储链表中的元素，从头遍历链表
+	 * 如果ArrayList中已包含了当前链表元素，则直接返回当前
+	 * 元素，否则将元素继续存入ArrayList中。
 	 * -----------------------------------------------
-	 * ����ʱ�䣺24ms
-	 * ռ���ڴ棺9560k
+	 * 运行时间：24ms
+	 * 占用内存：9560k
 	 */
 	public ListNode EntryNodeOfLoop(ListNode pHead){
 		if(pHead==null||pHead.next==null) return null;
@@ -31,13 +31,13 @@ public class �����л�����ڽ��55 {
     }
 	
 	/*
-	 * ˼·:
-	 * 	��������ָ�룬һ����һ�������ҵ����߽��㡣
-	 *  �ٽ���һ��ָ���ͷ��ʼ����һ��λ�ò��俪ʼ
-	 *  Ѱ�һ���ڣ����ʱҲ���ҵ��˻����
+	 * 思路:
+	 * 	利用两个指针，一个快一个慢，找到两者交点。
+	 *  再将让一个指针从头开始，另一个位置不变开始
+	 *  寻找环入口，相等时也就找到了环入口
 	 * -----------------------------------------------
-	 * ����ʱ�䣺19ms
-	 * ռ���ڴ棺9252k
+	 * 运行时间：19ms
+	 * 占用内存：9252k
 	 */
 	public ListNode EntryNodeOfLoop2(ListNode pHead){
 		if(pHead==null||pHead.next==null) return null;

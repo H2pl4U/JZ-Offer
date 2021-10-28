@@ -1,11 +1,11 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class ¶şÎ¬Êı×éÖĞµÄ²éÕÒ01 {
+public class äºŒç»´æ•°ç»„ä¸­çš„æŸ¥æ‰¾01 {
 
 	/*
 	 * ac 100%
-	 * ÔËĞĞÊ±¼ä£º179ms
-	 * Õ¼ÓÃÄÚ´æ£º18076k
+	 * è¿è¡Œæ—¶é—´ï¼š179ms
+	 * å ç”¨å†…å­˜ï¼š18076k
 	 */
 	public static boolean Find(int target, int [][] array) {
 		int row = array[0].length;

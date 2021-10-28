@@ -1,27 +1,27 @@
-package ��ָoffer;
+package 剑指offer;
 
 
 /**
- * ��һ���ַ���ת����һ������(ʵ��Integer.valueOf(string)�Ĺ��ܣ�
- * ����string����������Ҫ��ʱ����0)��Ҫ����ʹ���ַ���ת��������
- * �⺯���� ��ֵΪ0�����ַ�������һ���Ϸ�����ֵ�򷵻�0��
+ * 将一个字符串转换成一个整数(实现Integer.valueOf(string)的功能，
+ * 但是string不符合数字要求时返回0)，要求不能使用字符串转换整数的
+ * 库函数。 数值为0或者字符串不是一个合法的数值则返回0。
  * 
- * ����֪ʶ�㣺�ַ���  ����ת��
+ * 本题知识点：字符串  进制转化
  * @author ilovejava1314
  */
-public class ���ַ���ת��������49 {
+public class 把字符串转换成整数49 {
 	public static void main(String[] args) {
 		
 	}
 	
 	/*
-	 * ˼·:
-	 * 	���Ƚ��ַ���ת�����ַ����飬���ż�¼1��ѭ���ַ�����
-	 * ����ַ�AsicII���벻��0-9֮��ֱ�ӷ���0������Ҫ����ַ�
-	 * �ڵ�ǰsum*10+��ǰ���֡�
+	 * 思路:
+	 * 	首先将字符串转换成字符数组，负号记录1，循环字符数组
+	 * 如果字符AsicII编码不在0-9之间直接返回0，满足要求的字符
+	 * 在当前sum*10+当前数字。
 	 * -----------------------------------------------
-	 * ����ʱ�䣺20ms
-	 * ռ���ڴ棺9080k
+	 * 运行时间：20ms
+	 * 占用内存：9080k
 	 */
 	public int StrToInt(String str) {
 		if (str.equals("") || str.length() == 0)

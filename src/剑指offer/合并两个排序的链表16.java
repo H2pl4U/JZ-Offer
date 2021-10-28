@@ -1,23 +1,23 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * ÊäÈëÁ½¸öµ¥µ÷µÝÔöµÄÁ´±í£¬Êä³öÁ½¸öÁ´±íºÏ³ÉºóµÄÁ´±í£¬
- * µ±È»ÎÒÃÇÐèÒªºÏ³ÉºóµÄÁ´±íÂú×ãµ¥µ÷²»¼õ¹æÔò¡£
+ * è¾“å…¥ä¸¤ä¸ªå•è°ƒé€’å¢žçš„é“¾è¡¨ï¼Œè¾“å‡ºä¸¤ä¸ªé“¾è¡¨åˆæˆåŽçš„é“¾è¡¨ï¼Œ
+ * å½“ç„¶æˆ‘ä»¬éœ€è¦åˆæˆåŽçš„é“¾è¡¨æ»¡è¶³å•è°ƒä¸å‡è§„åˆ™ã€‚
  * @author ilovejava1314
  */
-public class ºÏ²¢Á½¸öÅÅÐòµÄÁ´±í16 {
+public class åˆå¹¶ä¸¤ä¸ªæŽ’åºçš„é“¾è¡¨16 {
 
 	public static void main(String[] args) {
 		
 	}
 	
 	/*
-	 * Ë¼Â·:µÝ¹éË¼Ïë,Ê×ÏÈÅÐ¶ÏÁ´±íÖÐÊÇ·ñÓÐ¿ÕÁ´±í£¬ÈôÓÐÔòÖ±½Ó·µ»ØÁíÒ»¸ö
-	 * ÅÐ¶ÏÁ½¸öÁ´±íµÚÒ»¸öÔªËØ´óÐ¡£¬ÈôList1Ð¡Ôò½«List1µÄµÚÒ»¸öÔªËØ´æÈë
-	 * ÐÂÁ´±íÖÐ£¬µÝ¹éList1.nextºÍList2,·´Ö®ÒàÈ»¡£
+	 * æ€è·¯:é€’å½’æ€æƒ³,é¦–å…ˆåˆ¤æ–­é“¾è¡¨ä¸­æ˜¯å¦æœ‰ç©ºé“¾è¡¨ï¼Œè‹¥æœ‰åˆ™ç›´æŽ¥è¿”å›žå¦ä¸€ä¸ª
+	 * åˆ¤æ–­ä¸¤ä¸ªé“¾è¡¨ç¬¬ä¸€ä¸ªå…ƒç´ å¤§å°ï¼Œè‹¥List1å°åˆ™å°†List1çš„ç¬¬ä¸€ä¸ªå…ƒç´ å­˜å…¥
+	 * æ–°é“¾è¡¨ä¸­ï¼Œé€’å½’List1.nextå’ŒList2,åä¹‹äº¦ç„¶ã€‚
 	 * -----------------------------------------------
-	 * ÔËÐÐÊ±¼ä£º25ms
-	 * Õ¼ÓÃÄÚ´æ£º9428k
+	 * è¿è¡Œæ—¶é—´ï¼š25ms
+	 * å ç”¨å†…å­˜ï¼š9428k
 	 */
 	public static ListNode Merge(ListNode list1,ListNode list2) {
 		if(list1==null) {

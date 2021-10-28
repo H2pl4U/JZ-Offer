@@ -1,17 +1,17 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
 import java.util.Arrays;
 
-public class ÖØ½¨¶ş²æÊ÷04 {
+public class é‡å»ºäºŒå‰æ ‘04 {
 	public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
 		if (pre.length == 0 || in.length == 0) return null;
 		TreeNode root = new TreeNode(pre[0]);
-		// ÔÚÖĞĞòÖĞÕÒµ½Ç°ĞòµÄ¸ù
+		// åœ¨ä¸­åºä¸­æ‰¾åˆ°å‰åºçš„æ ¹
 		for (int i = 0;i < in.length;i++) {
 			if (in[i] == pre[0]) {
-				//×ó×ÓÊ÷£¬copyOfRangeº¯Êı£¬×ó±ÕÓÒ¿ª
+				//å·¦å­æ ‘ï¼ŒcopyOfRangeå‡½æ•°ï¼Œå·¦é—­å³å¼€
 				root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
-				//ÓÒ×ÓÊ÷£¬copyOfRangeº¯Êı£¬×ó±ÕÓÒ¿ª
+				//å³å­æ ‘ï¼ŒcopyOfRangeå‡½æ•°ï¼Œå·¦é—­å³å¼€
 				root.right = reConstructBinaryTree(Arrays.copyOfRange(pre, i + 1, pre.length), Arrays.copyOfRange(in, i + 1, in.length));
 				break;
 			}

@@ -1,21 +1,21 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * ²Ù×÷¸ø¶¨µÄ¶þ²æÊ÷£¬½«Æä±ä»»ÎªÔ´¶þ²æÊ÷µÄ¾µÏñ¡£
+ * æ“ä½œç»™å®šçš„äºŒå‰æ ‘ï¼Œå°†å…¶å˜æ¢ä¸ºæºäºŒå‰æ ‘çš„é•œåƒã€‚
  * @author ilovejava1314
  */
-public class ¶þ²æÊ÷µÄ¾µÏñ18 {
+public class äºŒå‰æ ‘çš„é•œåƒ18 {
 
 	public static void main(String[] args) {
 		
 	}
 	
 	/*
-	 * Ë¼Â·:µÝ¹é£¬´Ó¸ù½Úµã¿ªÊ¼£¬½»»»Æä×óÓÒ×ÓÊ÷µÄÖµ
-	 * ±éÀúÆä×óÓÒ×ÓÊ÷£¬ÔÙ½»»»×óÓÒ×ÓÊ÷µÄÖµ
+	 * æ€è·¯:é€’å½’ï¼Œä»Žæ ¹èŠ‚ç‚¹å¼€å§‹ï¼Œäº¤æ¢å…¶å·¦å³å­æ ‘çš„å€¼
+	 * éåŽ†å…¶å·¦å³å­æ ‘ï¼Œå†äº¤æ¢å·¦å³å­æ ‘çš„å€¼
 	 * -----------------------------------------------
-	 * ÔËÐÐÊ±¼ä£º30ms
-	 * Õ¼ÓÃÄÚ´æ£º9576k
+	 * è¿è¡Œæ—¶é—´ï¼š30ms
+	 * å ç”¨å†…å­˜ï¼š9576k
 	 */
 	public void Mirror(TreeNode root) {
         TreeNode temp = null;

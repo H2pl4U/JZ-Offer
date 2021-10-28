@@ -1,20 +1,20 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 
 /**
- * Ð¡Ã÷ºÜÏ²»¶ÊýÑ§,ÓÐÒ»ÌìËûÔÚ×öÊýÑ§×÷ÒµÊ±,ÒªÇó¼ÆËã³ö9~16µÄºÍ,
- * ËûÂíÉÏ¾ÍÐ´³öÁËÕýÈ·´ð°¸ÊÇ100¡£µ«ÊÇËû²¢²»Âú×ãÓÚ´Ë,ËûÔÚÏë¾¿
- * ¾¹ÓÐ¶àÉÙÖÖÁ¬ÐøµÄÕýÊýÐòÁÐµÄºÍÎª100(ÖÁÉÙ°üÀ¨Á½¸öÊý)¡£Ã»¶à¾Ã,
- * Ëû¾ÍµÃµ½ÁíÒ»×éÁ¬ÐøÕýÊýºÍÎª100µÄÐòÁÐ:18,19,20,21,22¡£ÏÖÔÚ
- * °ÑÎÊÌâ½»¸øÄã,ÄãÄÜ²»ÄÜÒ²ºÜ¿ìµÄÕÒ³öËùÓÐºÍÎªSµÄÁ¬ÐøÕýÊýÐòÁÐ?
+ * å°æ˜Žå¾ˆå–œæ¬¢æ•°å­¦,æœ‰ä¸€å¤©ä»–åœ¨åšæ•°å­¦ä½œä¸šæ—¶,è¦æ±‚è®¡ç®—å‡º9~16çš„å’Œ,
+ * ä»–é©¬ä¸Šå°±å†™å‡ºäº†æ­£ç¡®ç­”æ¡ˆæ˜¯100ã€‚ä½†æ˜¯ä»–å¹¶ä¸æ»¡è¶³äºŽæ­¤,ä»–åœ¨æƒ³ç©¶
+ * ç«Ÿæœ‰å¤šå°‘ç§è¿žç»­çš„æ­£æ•°åºåˆ—çš„å’Œä¸º100(è‡³å°‘åŒ…æ‹¬ä¸¤ä¸ªæ•°)ã€‚æ²¡å¤šä¹…,
+ * ä»–å°±å¾—åˆ°å¦ä¸€ç»„è¿žç»­æ­£æ•°å’Œä¸º100çš„åºåˆ—:18,19,20,21,22ã€‚çŽ°åœ¨
+ * æŠŠé—®é¢˜äº¤ç»™ä½ ,ä½ èƒ½ä¸èƒ½ä¹Ÿå¾ˆå¿«çš„æ‰¾å‡ºæ‰€æœ‰å’Œä¸ºSçš„è¿žç»­æ­£æ•°åºåˆ—?
  *  Good Luck!
  * 
- * ±¾ÌâÖªÊ¶µã£º Çî¾Ù
+ * æœ¬é¢˜çŸ¥è¯†ç‚¹ï¼š ç©·ä¸¾
  * --------------------------------------------
  * @author ilovejava1314
  */
-public class ºÍÎªSµÄÁ¬ÐøÕýÊýÐòÁÐ41 {
+public class å’Œä¸ºSçš„è¿žç»­æ­£æ•°åºåˆ—41 {
 
 	public static void main(String[] args) {
 		ArrayList<ArrayList<Integer> > res = new ArrayList<ArrayList<Integer>>();
@@ -29,30 +29,30 @@ public class ºÍÎªSµÄÁ¬ÐøÕýÊýÐòÁÐ41 {
 	
 	
 	 /*
-	  * Ë¼Â·:
-	  * 	³£¹æË¼Â·£¬Ë«ÖØforÑ­»·£¬Íâ²ã¿ØÖÆÆðµãÎ»ÖÃ
-	  * ÄÚ²ã²éÕÒÁ¬ÐøÕýÊýºÍÎªsumµÄÐòÁÐ£¬Èô´óÓÚsumÖ±½ÓÌø
-	  * ³öÄÚÑ­»·£¬µÈÓÚÔò½«listÐòÁÐ´æÈë½á¹û¼¯ÖÐ¡£
+	  * æ€è·¯:
+	  * 	å¸¸è§„æ€è·¯ï¼ŒåŒé‡forå¾ªçŽ¯ï¼Œå¤–å±‚æŽ§åˆ¶èµ·ç‚¹ä½ç½®
+	  * å†…å±‚æŸ¥æ‰¾è¿žç»­æ­£æ•°å’Œä¸ºsumçš„åºåˆ—ï¼Œè‹¥å¤§äºŽsumç›´æŽ¥è·³
+	  * å‡ºå†…å¾ªçŽ¯ï¼Œç­‰äºŽåˆ™å°†liståºåˆ—å­˜å…¥ç»“æžœé›†ä¸­ã€‚
 	  *----------------------
-	  * ÔËÐÐÊ±¼ä£º22ms
-	  * Õ¼ÓÃÄÚ´æ£º9300k
+	  * è¿è¡Œæ—¶é—´ï¼š22ms
+	  * å ç”¨å†…å­˜ï¼š9300k
 	 */
 	public static  ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
 		ArrayList<ArrayList<Integer> > res = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if(sum<=0) return res;
 		int num = 0;
-		//Æðµã
+		//èµ·ç‚¹
 		for (int i = 1; i < sum/2+1; i++) {
 			num=0;
-			//Ë¢ÐÂlist
+			//åˆ·æ–°list
 			list = new ArrayList<Integer>();
-			//²éÕÒÁ¬ÐøÕýÊýÐòÁÐºÍÎªsum
+			//æŸ¥æ‰¾è¿žç»­æ­£æ•°åºåˆ—å’Œä¸ºsum
 			for (int j = i; j < sum; j++) {
 				num+=j;
 				if(num==sum) {
-					res.add(list);		//µÈÓÚsum½«list´æÈë½á¹û¼¯
-				}else if(num>sum){		//´óÓÚsumÖ±½ÓÌø³öÄÚÑ­»·
+					res.add(list);		//ç­‰äºŽsumå°†listå­˜å…¥ç»“æžœé›†
+				}else if(num>sum){		//å¤§äºŽsumç›´æŽ¥è·³å‡ºå†…å¾ªçŽ¯
 					break;
 				}
 				list.add(j);

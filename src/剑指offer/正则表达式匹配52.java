@@ -1,36 +1,36 @@
-package ��ָoffer;
+package 剑指offer;
 
 /**
- * ��ʵ��һ����������ƥ�����'.'��'*'���������ʽ��ģʽ�е�
- * �ַ�'.'��ʾ����һ���ַ�����'*'��ʾ��ǰ����ַ����Գ�����
- * ��Σ�����0�Σ��� �ڱ����У�ƥ����ָ�ַ����������ַ�ƥ
- * ������ģʽ�����磬�ַ���"aaa"��ģʽ"a.a"��"ab*ac*a"ƥ
- * �䣬������"aa.a"��"ab*a"����ƥ��
+ * 请实现一个函数用来匹配包括'.'和'*'的正则表达式。模式中的
+ * 字符'.'表示任意一个字符，而'*'表示它前面的字符可以出现任
+ * 意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹
+ * 配整个模式。例如，字符串"aaa"与模式"a.a"和"ab*ac*a"匹
+ * 配，但是与"aa.a"和"ab*a"均不匹配
  * 
  * @author ilovejava1314
  */
-public class �������ʽƥ��52 {
+public class 正则表达式匹配52 {
 	
 	/*
-	 * ˼·:
-	 * 	��ģʽ�еĵڶ����ַ����ǡ�*��ʱ��
-	 * 1������ַ�����һ���ַ���ģʽ�еĵ�һ���ַ���ƥ�䣬
-	 * ��ô�ַ�����ģʽ������һ���ַ���Ȼ��ƥ��ʣ��ġ�
-	 * 2����� �ַ�����һ���ַ���ģʽ�еĵ�һ���ַ��಻ƥ
-	 * �䣬ֱ�ӷ���false������ģʽ�еĵڶ����ַ��ǡ�*��ʱ��
+	 * 思路:
+	 * 	当模式中的第二个字符不是“*”时：
+	 * 1、如果字符串第一个字符和模式中的第一个字符相匹配，
+	 * 那么字符串和模式都后移一个字符，然后匹配剩余的。
+	 * 2、如果 字符串第一个字符和模式中的第一个字符相不匹
+	 * 配，直接返回false。而当模式中的第二个字符是“*”时：
 	 * 
-	 * ����ַ�����һ���ַ���ģʽ��һ���ַ���ƥ�䣬��ģʽ
-	 * ����2���ַ�������ƥ�䡣����ַ�����һ���ַ���ģʽ��
-	 * һ���ַ�ƥ�䣬������3��ƥ�䷽ʽ��
-	 * 	1��ģʽ����2�ַ����൱��x*�����ԣ�
-	 * 	2���ַ�������1�ַ���ģʽ����2�ַ���
-	 * 	3���ַ�������1�ַ���ģʽ���䣬������ƥ���ַ���һλ��
-	 * ��Ϊ*����ƥ���λ��
+	 * 如果字符串第一个字符跟模式第一个字符不匹配，则模式
+	 * 后移2个字符，继续匹配。如果字符串第一个字符跟模式第
+	 * 一个字符匹配，可以有3种匹配方式：
+	 * 	1、模式后移2字符，相当于x*被忽略；
+	 * 	2、字符串后移1字符，模式后移2字符；
+	 * 	3、字符串后移1字符，模式不变，即继续匹配字符下一位，
+	 * 因为*可以匹配多位；
 	 * 
-	 * ������Ҫע����ǣ�Java�Ҫʱ�̼��������Ƿ�Խ�硣
+	 * 这里需要注意的是：Java里，要时刻检验数组是否越界。
 	 * -----------------------------------------------
-	 * ����ʱ�䣺17ms
-	 * ռ���ڴ棺9208k
+	 * 运行时间：17ms
+	 * 占用内存：9208k
 	 */
 		public boolean match(char[] str, char[] pattern) {
 		    if (str == null || pattern == null) {
@@ -42,25 +42,25 @@ public class �������ʽƥ��52 {
 		}
 		  
 		public boolean matchCore(char[] str, int strIndex, char[] pattern, int patternIndex) {
-		    //��Ч�Լ��飺str��β��pattern��β��ƥ��ɹ�
+		    //有效性检验：str到尾，pattern到尾，匹配成功
 		    if (strIndex == str.length && patternIndex == pattern.length) {
 		        return true;
 		    }
-		    //pattern�ȵ�β��ƥ��ʧ��
+		    //pattern先到尾，匹配失败
 		    if (strIndex != str.length && patternIndex == pattern.length) {
 		        return false;
 		    }
-		    //ģʽ��2����*�����ַ�����1����ģʽ��1��ƥ��,��3��ƥ��ģʽ���粻ƥ�䣬ģʽ����2λ
+		    //模式第2个是*，且字符串第1个跟模式第1个匹配,分3种匹配模式；如不匹配，模式后移2位
 		    if (patternIndex + 1 < pattern.length && pattern[patternIndex + 1] == '*') {
 		        if ((strIndex != str.length && pattern[patternIndex] == str[strIndex]) || (pattern[patternIndex] == '.' && strIndex != str.length)) {
-		            return matchCore(str, strIndex, pattern, patternIndex + 2)//ģʽ����2����Ϊx*ƥ��0���ַ�
-		                    || matchCore(str, strIndex + 1, pattern, patternIndex + 2)//��Ϊģʽƥ��1���ַ�
-		                    || matchCore(str, strIndex + 1, pattern, patternIndex);//*ƥ��1������ƥ��str�е���һ��
+		            return matchCore(str, strIndex, pattern, patternIndex + 2)//模式后移2，视为x*匹配0个字符
+		                    || matchCore(str, strIndex + 1, pattern, patternIndex + 2)//视为模式匹配1个字符
+		                    || matchCore(str, strIndex + 1, pattern, patternIndex);//*匹配1个，再匹配str中的下一个
 		        } else {
 		            return matchCore(str, strIndex, pattern, patternIndex + 2);
 		        }
 		    }
-		    //ģʽ��2������*�����ַ�����1����ģʽ��1��ƥ�䣬�򶼺���1λ������ֱ�ӷ���false
+		    //模式第2个不是*，且字符串第1个跟模式第1个匹配，则都后移1位，否则直接返回false
 		    if ((strIndex != str.length && pattern[patternIndex] == str[strIndex]) || (pattern[patternIndex] == '.' && strIndex != str.length)) {
 		        return matchCore(str, strIndex + 1, pattern, patternIndex + 1);
 		    }

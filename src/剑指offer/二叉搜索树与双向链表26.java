@@ -1,29 +1,29 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.Stack;
 
 /**
- * ÊäÈëÒ»¿Ã¶þ²æËÑË÷Ê÷£¬½«¸Ã¶þ²æËÑË÷Ê÷×ª»»³ÉÒ»¸öÅÅÐòµÄË«ÏòÁ´±í¡£
- * ÒªÇó²»ÄÜ´´½¨ÈÎºÎÐÂµÄ½áµã£¬Ö»ÄÜµ÷ÕûÊ÷ÖÐ½áµãÖ¸ÕëµÄÖ¸Ïò¡£
+ * è¾“å…¥ä¸€æ£µäºŒå‰æœç´¢æ ‘ï¼Œå°†è¯¥äºŒå‰æœç´¢æ ‘è½¬æ¢æˆä¸€ä¸ªæŽ’åºçš„åŒå‘é“¾è¡¨ã€‚
+ * è¦æ±‚ä¸èƒ½åˆ›å»ºä»»ä½•æ–°çš„ç»“ç‚¹ï¼Œåªèƒ½è°ƒæ•´æ ‘ä¸­ç»“ç‚¹æŒ‡é’ˆçš„æŒ‡å‘ã€‚
 * @author ilovejava1314
 */
-public class ¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í26 {
+public class äºŒå‰æœç´¢æ ‘ä¸ŽåŒå‘é“¾è¡¨26 {
 
 	/*
-	 * Ë¼Â·:
-	 *  1.ºËÐÄÊÇÖÐÐò±éÀúµÄ·ÇµÝ¹éËã·¨¡£
-	 *  2.ÐÞ¸Äµ±Ç°±éÀú½ÚµãÓëÇ°Ò»±éÀú½ÚµãµÄÖ¸ÕëÖ¸Ïò¡£
+	 * æ€è·¯:
+	 *  1.æ ¸å¿ƒæ˜¯ä¸­åºéåŽ†çš„éžé€’å½’ç®—æ³•ã€‚
+	 *  2.ä¿®æ”¹å½“å‰éåŽ†èŠ‚ç‚¹ä¸Žå‰ä¸€éåŽ†èŠ‚ç‚¹çš„æŒ‡é’ˆæŒ‡å‘ã€‚
 	 *  
-	 *  Ë¼Â·Ô´ÓÚÅ£¿ÍÆÀÂÛnailperry´óÀÐ
+	 *  æ€è·¯æºäºŽç‰›å®¢è¯„è®ºnailperryå¤§ä½¬
 	 * -----------------------------------------------
-	 * ÔËÐÐÊ±¼ä£º30ms
-	 * Õ¼ÓÃÄÚ´æ£º9368k
+	 * è¿è¡Œæ—¶é—´ï¼š30ms
+	 * å ç”¨å†…å­˜ï¼š9368k
 	 */
 	public TreeNode Convert(TreeNode pRootOfTree) {
 		if(pRootOfTree==null) return null;
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode p = pRootOfTree;
-		TreeNode pre = null;	//±£´æÖÐÐò±éÀúÐòÁÐµÄÉÏÒ»¸ö½Úµã
+		TreeNode pre = null;	//ä¿å­˜ä¸­åºéåŽ†åºåˆ—çš„ä¸Šä¸€ä¸ªèŠ‚ç‚¹
 		boolean isFirst = true;
 		while(p!=null||!stack.isEmpty()) {
 			while(p!=null) {
@@ -32,7 +32,7 @@ public class ¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í26 {
 			}
 			p=stack.pop();
 			if(isFirst){
-				pRootOfTree = p;// ½«ÖÐÐò±éÀúÐòÁÐÖÐµÄµÚÒ»¸ö½Úµã¼ÇÎªroot
+				pRootOfTree = p;// å°†ä¸­åºéåŽ†åºåˆ—ä¸­çš„ç¬¬ä¸€ä¸ªèŠ‚ç‚¹è®°ä¸ºroot
 	            pre = pRootOfTree;
 	            isFirst = false;
 	        }else{
@@ -46,38 +46,38 @@ public class ¶þ²æËÑË÷Ê÷ÓëË«ÏòÁ´±í26 {
     }
 	
 	/*
-	 * Ë¼Â·:ÀûÓÃµÝ¹é
-	 *  1.½«×ó×ÓÊ÷¹¹Ôì³ÉË«Á´±í£¬²¢·µ»ØÁ´±íÍ·½Úµã¡£
-	 *  2.¶¨Î»ÖÁ×ó×ÓÊ÷Ë«Á´±í×îºóÒ»¸ö½Úµã¡£
-	 *  3.Èç¹û×ó×ÓÊ÷Á´±í²»Îª¿ÕµÄ»°£¬½«µ±Ç°root×·¼Óµ½×ó×ÓÊ÷Á´±í¡£
-	 *  4.½«ÓÒ×ÓÊ÷¹¹Ôì³ÉË«Á´±í£¬²¢·µ»ØÁ´±íÍ·½Úµã¡£
-	 *  5.Èç¹ûÓÒ×ÓÊ÷Á´±í²»Îª¿ÕµÄ»°£¬½«¸ÃÁ´±í×·¼Óµ½root½ÚµãÖ®ºó¡£
-	 *  6.¸ù¾Ý×ó×ÓÊ÷Á´±íÊÇ·ñÎª¿ÕÈ·¶¨·µ»ØµÄ½Úµã¡£
+	 * æ€è·¯:åˆ©ç”¨é€’å½’
+	 *  1.å°†å·¦å­æ ‘æž„é€ æˆåŒé“¾è¡¨ï¼Œå¹¶è¿”å›žé“¾è¡¨å¤´èŠ‚ç‚¹ã€‚
+	 *  2.å®šä½è‡³å·¦å­æ ‘åŒé“¾è¡¨æœ€åŽä¸€ä¸ªèŠ‚ç‚¹ã€‚
+	 *  3.å¦‚æžœå·¦å­æ ‘é“¾è¡¨ä¸ä¸ºç©ºçš„è¯ï¼Œå°†å½“å‰rootè¿½åŠ åˆ°å·¦å­æ ‘é“¾è¡¨ã€‚
+	 *  4.å°†å³å­æ ‘æž„é€ æˆåŒé“¾è¡¨ï¼Œå¹¶è¿”å›žé“¾è¡¨å¤´èŠ‚ç‚¹ã€‚
+	 *  5.å¦‚æžœå³å­æ ‘é“¾è¡¨ä¸ä¸ºç©ºçš„è¯ï¼Œå°†è¯¥é“¾è¡¨è¿½åŠ åˆ°rootèŠ‚ç‚¹ä¹‹åŽã€‚
+	 *  6.æ ¹æ®å·¦å­æ ‘é“¾è¡¨æ˜¯å¦ä¸ºç©ºç¡®å®šè¿”å›žçš„èŠ‚ç‚¹ã€‚
 	 *  
-	 *  Ë¼Â·Ô´ÓÚÅ£¿ÍÆÀÂÛnailperry´óÀÐ
+	 *  æ€è·¯æºäºŽç‰›å®¢è¯„è®ºnailperryå¤§ä½¬
 	 * -----------------------------------------------
-	 * ÔËÐÐÊ±¼ä£º22ms
-	 * Õ¼ÓÃÄÚ´æ£º9128k
+	 * è¿è¡Œæ—¶é—´ï¼š22ms
+	 * å ç”¨å†…å­˜ï¼š9128k
 	 */
 	protected TreeNode leftLast = null;
     public TreeNode Convert2(TreeNode root) {
         if(root==null)
             return null;
         if(root.left==null&&root.right==null){
-            leftLast = root;// ×îºóµÄÒ»¸ö½Úµã¿ÉÄÜÎª×îÓÒ²àµÄÒ¶½Úµã
+            leftLast = root;// æœ€åŽçš„ä¸€ä¸ªèŠ‚ç‚¹å¯èƒ½ä¸ºæœ€å³ä¾§çš„å¶èŠ‚ç‚¹
             return root;
         }
-        // 1.½«×ó×ÓÊ÷¹¹Ôì³ÉË«Á´±í£¬²¢·µ»ØÁ´±íÍ·½Úµã
+        // 1.å°†å·¦å­æ ‘æž„é€ æˆåŒé“¾è¡¨ï¼Œå¹¶è¿”å›žé“¾è¡¨å¤´èŠ‚ç‚¹
         TreeNode left = Convert(root.left);
-        // 3.Èç¹û×ó×ÓÊ÷Á´±í²»Îª¿ÕµÄ»°£¬½«µ±Ç°root×·¼Óµ½×ó×ÓÊ÷Á´±í
+        // 3.å¦‚æžœå·¦å­æ ‘é“¾è¡¨ä¸ä¸ºç©ºçš„è¯ï¼Œå°†å½“å‰rootè¿½åŠ åˆ°å·¦å­æ ‘é“¾è¡¨
         if(left!=null){
             leftLast.right = root;
             root.left = leftLast;
         }
-        leftLast = root;// µ±¸ù½ÚµãÖ»º¬×ó×ÓÊ÷Ê±£¬Ôò¸Ã¸ù½ÚµãÎª×îºóÒ»¸ö½Úµã
-        // 4.½«ÓÒ×ÓÊ÷¹¹Ôì³ÉË«Á´±í£¬²¢·µ»ØÁ´±íÍ·½Úµã
+        leftLast = root;// å½“æ ¹èŠ‚ç‚¹åªå«å·¦å­æ ‘æ—¶ï¼Œåˆ™è¯¥æ ¹èŠ‚ç‚¹ä¸ºæœ€åŽä¸€ä¸ªèŠ‚ç‚¹
+        // 4.å°†å³å­æ ‘æž„é€ æˆåŒé“¾è¡¨ï¼Œå¹¶è¿”å›žé“¾è¡¨å¤´èŠ‚ç‚¹
         TreeNode right = Convert(root.right);
-        // 5.Èç¹ûÓÒ×ÓÊ÷Á´±í²»Îª¿ÕµÄ»°£¬½«¸ÃÁ´±í×·¼Óµ½root½ÚµãÖ®ºó
+        // 5.å¦‚æžœå³å­æ ‘é“¾è¡¨ä¸ä¸ºç©ºçš„è¯ï¼Œå°†è¯¥é“¾è¡¨è¿½åŠ åˆ°rootèŠ‚ç‚¹ä¹‹åŽ
         if(right!=null){
             right.left = root;
             root.right = right;

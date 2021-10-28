@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class ¶ş½øÖÆÖĞ1µÄ¸öÊı11 {
+public class äºŒè¿›åˆ¶ä¸­1çš„ä¸ªæ•°11 {
 	
 	//ac
 	public static int NumberOf1(int n) {

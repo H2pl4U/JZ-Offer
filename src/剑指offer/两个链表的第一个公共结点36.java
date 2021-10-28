@@ -1,26 +1,26 @@
-package ��ָoffer;
+package 剑指offer;
 
 
 /**
- * ���������������ҳ����ǵĵ�һ��������㡣
+ * 输入两个链表，找出它们的第一个公共结点。
  * 
- * ����֪ʶ�㣺 ����
+ * 本题知识点： 链表
  * -------------------------------------------- 
  * @author ilovejava1314
  */
-public class ���������ĵ�һ���������36 {
+public class 两个链表的第一个公共结点36 {
 
 	/*
-	 * ˼·:
-	 * 		������������p1,p2�ֱ�ָ��pHead1��pHead2,��ͷ
-	 * �ڵ㿪ʼ����Ѱ���Ƿ�Ϊ�����ڵ㣬�����Ǹ���ָ������һ
-	 * ���ڵ㣬����˴νڵ�Ϊ�գ���ô��ͷ�ڵ���������������
-	 * ָ�뵽�� null ���ߵ��﹫����㡣
+	 * 思路:
+	 * 		定义两个链表p1,p2分别指向pHead1和pHead2,从头
+	 * 节点开始遍历寻找是否为公共节点，若不是各自指向其下一
+	 * 个节点，如果此次节点为空，那么从头节点再来，最终两个
+	 * 指针到达 null 或者到达公共结点。
 	 * 
-	 * ţ������selfboot
+	 * 牛客评论selfboot
 	 * ---------------------------------------------
-	 * ����ʱ�䣺31ms
-	 * ռ���ڴ棺9616k
+	 * 运行时间：31ms
+	 * 占用内存：9616k
 	 */
 	public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {
 		ListNode p1 = pHead1;

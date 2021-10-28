@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class ÌøÌ¨½×08 {
+public class è·³å°é˜¶08 {
 
 	// ac
 	public static int JumpFloor(int target) {

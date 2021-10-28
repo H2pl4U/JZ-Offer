@@ -1,34 +1,34 @@
-package ��ָoffer;
+package 剑指offer;
 
 import java.util.ArrayList;
 
 /**
- * ţ���������һ����Ա��Fish��ÿ���糿���ǻ�����һ��Ӣ����־��
- * дЩ�����ڱ����ϡ�ͬ��Cat��Fishд�������ĸ���Ȥ����һ������
- * Fish������������ȴ������������˼�����磬��student. a am I����
- * ��������ʶ������һ�ԭ���Ѿ��ӵ��ʵ�˳��ת�ˣ���ȷ�ľ���Ӧ��
- * �ǡ�I am a student.����Cat��һһ�ķ�ת��Щ����˳��ɲ����У���
- * �ܰ�����ô��
+ * 牛客最近来了一个新员工Fish，每天早晨总是会拿着一本英文杂志，
+ * 写些句子在本子上。同事Cat对Fish写的内容颇感兴趣，有一天他向
+ * Fish借来翻看，但却读不懂它的意思。例如，“student. a am I”。
+ * 后来才意识到，这家伙原来把句子单词的顺序翻转了，正确的句子应该
+ * 是“I am a student.”。Cat对一一的翻转这些单词顺序可不在行，你
+ * 能帮助他么？
  * 
- * ����֪ʶ�㣺 �ַ���
+ * 本题知识点： 字符串
  * --------------------------------------------
  * @author ilovejava1314
  */
-public class ��ת����˳����44 {	
+public class 翻转单词顺序列44 {	
 	public static void main(String[] args) {
 		String s = "student. a am I";
 		System.out.println(ReverseSentence2(s));
 	}
 	
 	 /*
-	  * ˼·:
-	  * 	���˼·�ȽϷ������õ�����������forѭ����
-	  * ���Ƚ�str�����ַ������У�Ȼ��ÿ�����ʴ���
-	  * ArrayList�У���������ַ�����ArrayList��
-	  * ֵ������ɷ�ת����˳�����
+	  * 思路:
+	  * 	这个思路比较繁琐，用到了三个单层for循环，
+	  * 首先将str存入字符数组中，然后将每个单词存入
+	  * ArrayList中，逆序给空字符串赋ArrayList的
+	  * 值即可完成翻转单词顺序操作
 	  *----------------------------------
-	  * ����ʱ�䣺26ms
-	  * ռ���ڴ棺9576k
+	  * 运行时间：26ms
+	  * 占用内存：9576k
 	 */
 	public static String ReverseSentence(String str) {
 		if(str.trim().equals("")){
@@ -57,14 +57,14 @@ public class ��ת����˳����44 {
 	
 	
 	/*
-	  * ˼·:
-	  * 	˼·���һ�����ƣ������˺ܶ࣬��ͨ���ո�
-	  * ��ÿ�����ʷ����ַ��������У�Ȼ�������򽫵��ʴ���
-	  * StringBuffer�з������ӿո����շ�����toString()���
+	  * 思路:
+	  * 	思路与第一种相似，单简化了很多，先通过空格
+	  * 将每个单词放入字符串数组中，然后再逆序将单词存入
+	  * StringBuffer中方便添加空格。最终返回其toString()结果
 	  * 
 	  *----------------------------------
-	  * ����ʱ�䣺20ms
-	  * ռ���ڴ棺9476k
+	  * 运行时间：20ms
+	  * 占用内存：9476k
 	 */
 	public static String ReverseSentence2(String str) {
 	    if(str.trim().equals("")){

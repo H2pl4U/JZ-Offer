@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class ¾ØĞÎ¸²¸Ç10 {
+public class çŸ©å½¢è¦†ç›–10 {
 
 	//ac
 	public static int RectCover(int target) {

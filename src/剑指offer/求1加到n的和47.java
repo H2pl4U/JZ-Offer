@@ -1,26 +1,26 @@
-package ��ָoffer;
+package 剑指offer;
 
 
 /**
- * ��1+2+3+...+n��Ҫ����ʹ�ó˳�����for��while��if��
- * else��switch��case�ȹؼ��ּ������ж���䣨A?B:C����
+ * 求1+2+3+...+n，要求不能使用乘除法、for、while、if、
+ * else、switch、case等关键字及条件判断语句（A?B:C）。
  * 
- * ����֪ʶ�㣺 ����ת��
+ * 本题知识点： 进制转化
  * @author ilovejava1314
  */
-public class ��1�ӵ�n�ĺ�47 {
+public class 求1加到n的和47 {
 	public static void main(String[] args) {
 		System.out.println(Sum_Solution(10));
 	}
 	
 	/*
-	 * ˼·:
-	 * ����ʹ��ѭ����ݹ鶼�ܺ���⣬���Ǹ���Ҫ��ѭ�������ã�
-	 * �ݹ���ȱ���������������ö�·�����취����ߵ�����Ϊfalse
-	 * ֱ����һ�У��������ҵ��ݹ����������������ͽ���ˡ�
+	 * 思路:
+	 * 本题使用循环或递归都很好求解，但是根据要求，循环不可用，
+	 * 递归又缺少跳出条件，利用短路与解决办法，左边的条件为false
+	 * 直接下一行，即可以找到递归的跳出条件，问题就解决了。
 	 * -----------------------------------------------
-	 * ����ʱ�䣺15ms
-	 * ռ���ڴ棺9280k
+	 * 运行时间：15ms
+	 * 占用内存：9280k
 	 */
 	public static int Sum_Solution(int n) {
 		int res =0,a=1;

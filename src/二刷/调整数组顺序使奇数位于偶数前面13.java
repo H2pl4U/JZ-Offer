@@ -1,8 +1,8 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
 import java.util.ArrayList;
 
-public class µ÷ÕûÊı×éË³ĞòÊ¹ÆæÊıÎ»ÓÚÅ¼ÊıÇ°Ãæ13 {
+public class è°ƒæ•´æ•°ç»„é¡ºåºä½¿å¥‡æ•°ä½äºå¶æ•°å‰é¢13 {
 
 	//ac
 	public static void reOrderArray(int [] array) {

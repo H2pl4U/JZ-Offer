@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class Ğı×ªÊı×éµÄ×îĞ¡Êı×Ö06 {
+public class æ—‹è½¬æ•°ç»„çš„æœ€å°æ•°å­—06 {
 
 	public static void main(String[] args) {
 		
@@ -8,8 +8,8 @@ public class Ğı×ªÊı×éµÄ×îĞ¡Êı×Ö06 {
 	
 	/*
 	 * ac100%
-	 * ÔËĞĞÊ±¼ä£º261ms
-	 * Õ¼ÓÃÄÚ´æ£º28216k
+	 * è¿è¡Œæ—¶é—´ï¼š261ms
+	 * å ç”¨å†…å­˜ï¼š28216k
 	 */
 	public int minNumberInRotateArray(int [] array) {
 		if(array.length==0)

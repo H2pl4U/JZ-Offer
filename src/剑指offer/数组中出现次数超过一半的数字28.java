@@ -1,14 +1,14 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.Arrays;
 
 /*
- *Êý×éÖÐÓÐÒ»¸öÊý×Ö³öÏÖµÄ´ÎÊý³¬¹ýÊý×é³¤¶ÈµÄÒ»°ë£¬ÇëÕÒ³öÕâ¸öÊý×Ö¡£
- *ÀýÈçÊäÈëÒ»¸ö³¤¶ÈÎª9µÄÊý×é{1,2,3,2,2,2,5,4,2}¡£ÓÉÓÚÊý×Ö2ÔÚÊý×éÖÐ
- *³öÏÖÁË5´Î£¬³¬¹ýÊý×é³¤¶ÈµÄÒ»°ë£¬Òò´ËÊä³ö2¡£Èç¹û²»´æÔÚÔòÊä³ö0¡£
+ *æ•°ç»„ä¸­æœ‰ä¸€ä¸ªæ•°å­—å‡ºçŽ°çš„æ¬¡æ•°è¶…è¿‡æ•°ç»„é•¿åº¦çš„ä¸€åŠï¼Œè¯·æ‰¾å‡ºè¿™ä¸ªæ•°å­—ã€‚
+ *ä¾‹å¦‚è¾“å…¥ä¸€ä¸ªé•¿åº¦ä¸º9çš„æ•°ç»„{1,2,3,2,2,2,5,4,2}ã€‚ç”±äºŽæ•°å­—2åœ¨æ•°ç»„ä¸­
+ *å‡ºçŽ°äº†5æ¬¡ï¼Œè¶…è¿‡æ•°ç»„é•¿åº¦çš„ä¸€åŠï¼Œå› æ­¤è¾“å‡º2ã€‚å¦‚æžœä¸å­˜åœ¨åˆ™è¾“å‡º0ã€‚
  * @author ilovejava1314
  */
-public class Êý×éÖÐ³öÏÖ´ÎÊý³¬¹ýÒ»°ëµÄÊý×Ö28 {
+public class æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°è¶…è¿‡ä¸€åŠçš„æ•°å­—28 {
 
 	public static void main(String[] args) {
 		int[] array = { 7, 6, 2, 2, 2, 2, 2, 5 };
@@ -16,18 +16,18 @@ public class Êý×éÖÐ³öÏÖ´ÎÊý³¬¹ýÒ»°ëµÄÊý×Ö28 {
 	}
 
 	/*
-	 * Ë¼Â·: Ê×ÏÈ¸ù¾ÝÌâÒâ£¬Ã÷°×ÅÅÐòºóµÄÊý×éÖÐ³öÏÖ´ÎÊý³¬¹ý³¤¶ÈÒ»°ëµÄÊý×Ö±Ø¶¨»áÔÚÊý×éÖÐ¼äÎ»ÖÃ³öÏÖ
-	 * ¼´±äÏàµÄÕÒ³öÕâ¸ö¿ÉÄÜµÄÊý£¬Ö»ÐèÍ³¼Æ³ö¸ÃÊýµÄ¸öÊý£¬ÔÙÅÐ¶ÏÊÇ·ñÕæµÄ³¬¹ýÁË³¤¶ÈµÄ Ò»°ë¼´¿É¡£
+	 * æ€è·¯: é¦–å…ˆæ ¹æ®é¢˜æ„ï¼Œæ˜Žç™½æŽ’åºåŽçš„æ•°ç»„ä¸­å‡ºçŽ°æ¬¡æ•°è¶…è¿‡é•¿åº¦ä¸€åŠçš„æ•°å­—å¿…å®šä¼šåœ¨æ•°ç»„ä¸­é—´ä½ç½®å‡ºçŽ°
+	 * å³å˜ç›¸çš„æ‰¾å‡ºè¿™ä¸ªå¯èƒ½çš„æ•°ï¼Œåªéœ€ç»Ÿè®¡å‡ºè¯¥æ•°çš„ä¸ªæ•°ï¼Œå†åˆ¤æ–­æ˜¯å¦çœŸçš„è¶…è¿‡äº†é•¿åº¦çš„ ä¸€åŠå³å¯ã€‚
 	 * -------------------------------------------- 
-	 * ÔËÐÐÊ±¼ä£º15ms
-	 * Õ¼ÓÃÄÚ´æ£º9220k
+	 * è¿è¡Œæ—¶é—´ï¼š15ms
+	 * å ç”¨å†…å­˜ï¼š9220k
 	 */
 	public static int MoreThanHalfNum_Solution(int[] array) {
 		int len = array.length;
-		// ±ß½ç
+		// è¾¹ç•Œ
 		if (len == 0)
 			return 0;
-		// ÅÅÐò
+		// æŽ’åº
 		Arrays.sort(array);
 		int count = 0;
 		//

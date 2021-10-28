@@ -1,6 +1,6 @@
-package ¶şË¢;
+package äºŒåˆ·;
 
-public class Ìæ»»¿Õ¸ñ02 {
+public class æ›¿æ¢ç©ºæ ¼02 {
 	
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("we are family");
@@ -19,8 +19,8 @@ public class Ìæ»»¿Õ¸ñ02 {
 	
 	/*
 	 * ac 100%
-	 * ÔËĞĞÊ±¼ä£º18ms
-	 * Õ¼ÓÃÄÚ´æ£º9564k
+	 * è¿è¡Œæ—¶é—´ï¼š18ms
+	 * å ç”¨å†…å­˜ï¼š9564k
 	 */
 	public static String replaceSpace(StringBuffer str) {
 		StringBuffer sb = new StringBuffer();

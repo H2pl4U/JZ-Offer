@@ -1,23 +1,23 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * ´ÓÉÏÍùÏÂ´òÓ¡³ö¶þ²æÊ÷µÄÃ¿¸ö½Úµã£¬Í¬²ã½Úµã´Ó×óÖÁÓÒ´òÓ¡¡£
+ * ä»Žä¸Šå¾€ä¸‹æ‰“å°å‡ºäºŒå‰æ ‘çš„æ¯ä¸ªèŠ‚ç‚¹ï¼ŒåŒå±‚èŠ‚ç‚¹ä»Žå·¦è‡³å³æ‰“å°ã€‚
  * @author ilovejava1314
  */
-public class ´ÓÉÏÍùÏÂ´òÓ¡¶þ²æÊ÷22 {
+public class ä»Žä¸Šå¾€ä¸‹æ‰“å°äºŒå‰æ ‘22 {
 	/*
-	 * Ë¼Â·:½èÖúÒ»¸ö¶ÓÁÐ´æ·ÅÏàÓ¦µÄ¶þ²æÊ÷,Ê×ÏÈ½«rootÈë¶Ó£¬
-	 * Ñ­»·¶ÓÁÐ£¬É¾³ý²¢·µ»ØrootµÄÖµ£¬²¢½«´ËÖµ´æÈëÊý×é
-	 * ÈôrootµÄ×ó×ÓÊ÷²»Îª¿Õ£¬ÄÇÃ´ÏÈ½«×ó×ÓÊ÷Èë¶Ó£¬Í¬Àí
-	 * rootµÄÓÒ×ÓÊ÷²»Îª¿Õ£¬ÔÙ½«ÓÒ×ÓÊ÷Èë¶Ó£¬ÒÀ´ËÑ­»·
-	 * Ö±µ½¶ÓÁÐÎª¿Õ(Ã»ÓÐ×óÓÒ×ÓÊ÷µÄÊ±ºò)
+	 * æ€è·¯:å€ŸåŠ©ä¸€ä¸ªé˜Ÿåˆ—å­˜æ”¾ç›¸åº”çš„äºŒå‰æ ‘,é¦–å…ˆå°†rootå…¥é˜Ÿï¼Œ
+	 * å¾ªçŽ¯é˜Ÿåˆ—ï¼Œåˆ é™¤å¹¶è¿”å›žrootçš„å€¼ï¼Œå¹¶å°†æ­¤å€¼å­˜å…¥æ•°ç»„
+	 * è‹¥rootçš„å·¦å­æ ‘ä¸ä¸ºç©ºï¼Œé‚£ä¹ˆå…ˆå°†å·¦å­æ ‘å…¥é˜Ÿï¼ŒåŒç†
+	 * rootçš„å³å­æ ‘ä¸ä¸ºç©ºï¼Œå†å°†å³å­æ ‘å…¥é˜Ÿï¼Œä¾æ­¤å¾ªçŽ¯
+	 * ç›´åˆ°é˜Ÿåˆ—ä¸ºç©º(æ²¡æœ‰å·¦å³å­æ ‘çš„æ—¶å€™)
 	 * -----------------------------------------------
-	 * ÔËÐÐÊ±¼ä£º23ms
-	 * Õ¼ÓÃÄÚ´æ£º9184k
+	 * è¿è¡Œæ—¶é—´ï¼š23ms
+	 * å ç”¨å†…å­˜ï¼š9184k
 	 */
 	public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
@@ -25,15 +25,15 @@ public class ´ÓÉÏÍùÏÂ´òÓ¡¶þ²æÊ÷22 {
 		Queue<TreeNode> queue = new LinkedList<TreeNode>();
 		queue.add(root);
 		while(!queue.isEmpty()) {
-			//É¾³ý²¢·µ»Ø
+			//åˆ é™¤å¹¶è¿”å›ž
 			TreeNode node = queue.poll();
-			//Êý×é×Ô¶¥ÏòÏÂ´æÖµ
+			//æ•°ç»„è‡ªé¡¶å‘ä¸‹å­˜å€¼
 			list.add(node.val);
-			//×ó×ÓÊ÷²»Îª¿ÕÔò½«×ó×ÓÊ÷Èë¶Ó
+			//å·¦å­æ ‘ä¸ä¸ºç©ºåˆ™å°†å·¦å­æ ‘å…¥é˜Ÿ
 			if(node.left!=null) {
 				queue.add(node.left);
 			}
-			//ÓÒ×ÓÊ÷²»Îª¿ÕÔò½«ÓÒ×ÓÊ÷Èë¶Ó
+			//å³å­æ ‘ä¸ä¸ºç©ºåˆ™å°†å³å­æ ‘å…¥é˜Ÿ
 			if(node.right!=null) {
 				queue.add(node.right);
 			}

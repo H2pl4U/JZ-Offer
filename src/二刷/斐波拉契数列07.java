@@ -1,6 +1,6 @@
-package 二刷;
+package 浜屽埛;
 
-public class 斐波拉契数列07 {
+public class 鏂愭尝鎷夊鏁板垪07 {
 	//ac
 	public static int Fibonacci(int n) {
 		if(n<=1) return n;

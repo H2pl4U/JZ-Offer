@@ -1,4 +1,4 @@
-package ��ָoffer;
+package 剑指offer;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -6,21 +6,21 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
-  *��ʵ��һ����������֮���δ�ӡ������������һ�а���
-  *�����ҵ�˳���ӡ���ڶ��㰴�մ��������˳���ӡ��
-  *�����а��մ����ҵ�˳���ӡ���������Դ����ơ�
+  *请实现一个函数按照之字形打印二叉树，即第一行按照
+  *从左到右的顺序打印，第二层按照从右至左的顺序打印，
+  *第三行按照从左到右的顺序打印，其他行以此类推。
   *
   * @author ilovejava1314
   */
-public class ��֮����˳���ӡ������59 {
+public class 按之字形顺序打印二叉树59 {
 	/*
-	 * ˼·:
-	 * 	���ö��д洢�������ڵ㣬���÷�תֵreverse���Ӹ�
-	 * �ڵ�������Ӹ��ڵ㿪ʼ��ֵ��list����������������
-	 * �������������У�ÿ���η�תһ��list�������⡣
+	 * 思路:
+	 * 	利用队列存储二叉树节点，设置反转值reverse，从根
+	 * 节点遍历，从根节点开始存值入list，若有左子树或右
+	 * 子树则存入队列中，每两次反转一次list满足题意。
 	 * -------------------------------------------
-	 * ����ʱ�䣺33ms
-	 * ռ���ڴ棺9532k
+	 * 运行时间：33ms
+	 * 占用内存：9532k
 	 */
 	public ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();

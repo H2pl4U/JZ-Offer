@@ -1,17 +1,17 @@
-package ½£Ö¸offer;
+package å‰‘æŒ‡offer;
 
 /**
- * ÇëÊµÏÖÁ½¸öº¯Êı£¬·Ö±ğÓÃÀ´ĞòÁĞ»¯ºÍ·´ĞòÁĞ»¯¶ş²æÊ÷
+ * è¯·å®ç°ä¸¤ä¸ªå‡½æ•°ï¼Œåˆ†åˆ«ç”¨æ¥åºåˆ—åŒ–å’Œååºåˆ—åŒ–äºŒå‰æ ‘
  * @author ilovejava1314
  */
-public class ĞòÁĞ»¯¶ş²æÊ÷61 {
+public class åºåˆ—åŒ–äºŒå‰æ ‘61 {
 	/*
-	 * Ë¼Â·:
-	 * 	¸ù½ÚµãÒÑÈ·¶¨£¬´ÓÆä×óÓÒ×ÓÊ÷±éÀúÇó³öĞòÁĞ»¯
-	 * ²»Âú×ãÌõ¼ş·µ»Ø¿Õ£¬Âú×ãÔòÆ´½Ó×Ö·û´®¡£
+	 * æ€è·¯:
+	 * 	æ ¹èŠ‚ç‚¹å·²ç¡®å®šï¼Œä»å…¶å·¦å³å­æ ‘éå†æ±‚å‡ºåºåˆ—åŒ–
+	 * ä¸æ»¡è¶³æ¡ä»¶è¿”å›ç©ºï¼Œæ»¡è¶³åˆ™æ‹¼æ¥å­—ç¬¦ä¸²ã€‚
 	 * ----------------------------------
-	 * ÔËĞĞÊ±¼ä£º29ms
-	 * Õ¼ÓÃÄÚ´æ£º9688k
+	 * è¿è¡Œæ—¶é—´ï¼š29ms
+	 * å ç”¨å†…å­˜ï¼š9688k
 	 */
 	private String serializeString = "";
 	String Serialize(TreeNode root) {
@@ -29,7 +29,7 @@ public class ĞòÁĞ»¯¶ş²æÊ÷61 {
 		if (this.serializeString.length() == 0) return null;
 	    int idx = this.serializeString.indexOf(" ");
 	    if (idx == -1) return null;
-	    //Æ´½Ó×Ö·û´®
+	    //æ‹¼æ¥å­—ç¬¦ä¸²
 	    String sub = this.serializeString.substring(0, idx);
 	    this.serializeString = this.serializeString.substring(idx + 1);
 	    if (sub.equals("#")) {
